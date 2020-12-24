@@ -23,7 +23,7 @@ public class Job {
 
         }
 
-        public Job(String value) {
+        public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
             this(); // > = calls the 1st constructor
             this.name = name;
             this.employer = employer;
