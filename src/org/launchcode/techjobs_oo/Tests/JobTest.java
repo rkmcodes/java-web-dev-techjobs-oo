@@ -59,14 +59,6 @@ public class JobTest {
 
     @Test
     public void toStringShouldAddMessageIfFieldIsEmpty(){
-
-//        String result = String.format("\nID: %d\n" +
-//                "Name: %s\n" +
-//                "Employer: Data not available\n" +
-//                "Location: Data not available\n" +
-//                "Position Type: %s\n" +
-//                "Core Competency: %s\n",test5.getId(),test5.getName(),test5.getPositionType(),test5.getCoreCompetency());
-
         String result = "\n" + "ID: " + test6.getId() + "\n"
                 + "Name: " + "Data not available" + "\n"
                 + "Employer: " + "Data not available" + "\n"
@@ -75,12 +67,5 @@ public class JobTest {
                 + "Core Competency: " + "Data not available" + "\n";
         assertEquals(result,test6.toString());
     }
-
-// BONUS
-//    @Test
-//    public void shouldReturnOopsIfOnlyHasId(){
-//        assertEquals("OOPS! This job does not seem to exist.", test1.toString());
-//    }
-
 
 }
